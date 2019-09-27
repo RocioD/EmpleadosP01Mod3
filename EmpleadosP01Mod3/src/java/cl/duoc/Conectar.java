@@ -20,7 +20,7 @@ public class Conectar {
     public String port = "3306";
 
     // Ruta de nuestra base de datos (desactivamos el uso de SSL con "?useSSL=false")
-    public String url = "jdbc:mysql://" + hostname + ":" + port + "/" + database + "?useSSL=false";
+    public String url = "jdbc:mysql://" + hostname + ":" + port + "/" + database + "?useSSL=false&useTimezone=true&serverTimezone=GMT";
 
     // Nombre de usuario
     public String username = "root";

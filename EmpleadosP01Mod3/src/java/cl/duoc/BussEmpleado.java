@@ -85,7 +85,7 @@ public class BussEmpleado {
             PreparedStatement pstm = conn.prepareStatement(sql);
             pstm.setString(1, obj.getNombre());
             pstm.setInt(2, obj.getEdad());
-            pstm.setInt(3, obj.getEdad());
+            pstm.setInt(3, obj.getAntiguedad());
             pstm.setString(4, obj.getRut());
             pstm.executeUpdate();
             std = true;
